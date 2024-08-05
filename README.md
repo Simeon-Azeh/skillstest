@@ -25,7 +25,7 @@ A responsive medical dashboard application for healthcare professionals, display
 - CSS
 - JavaScript
 - Tailwind CSS
-- Axios for API requests
+- Fetch API
 - Chart.js for graphs
 
 
