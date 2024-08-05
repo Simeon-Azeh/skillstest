@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#f6f7f8] p-6 w-full ">
+    <div>
+        <!--Header-->
+        <div class="bg-white w-full h-[72px] flex items-center justify-between px-6 rounded-[70px] sticky top-0 z-50">
+            <div class="w-[211px] h-[48px]">
+                <img src="./assets/TestLogo.svg" alt="TestLogo" class="w-full">
+            </div>
+            <ul class="flex items-center gap-6">
+                <li><a href="#" class="flex gap-2 items-center"><img src="./assets/home_FILL0_wght300_GRAD0_opsz24.svg" alt="">Overview</a></li>
+                <li class="bg-[#01F0D0] p-1 rounded-full px-3"><a href="#" class="flex gap-2 items-center"><img src="./assets/group_FILL0_wght300_GRAD0_opsz24.svg" alt="">Patients</a></li>
+                <li><a href="#" class="flex gap-2 items-center"><img src="./assets/calendar_today_FILL0_wght300_GRAD0_opsz24.svg" alt="">Schedule</a></li>
+                <li><a href="#" class="flex gap-2 items-center"><img src="./assets/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg" alt="">Message</a></li>
+                <li><a href="#" class="flex gap-2 items-center"><img src="./assets/credit_card_FILL0_wght300_GRAD0_opsz24.svg" alt="">Transactions</a></li>
+            </ul>
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10">
+                    <img src="./assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png" alt="Doctor" class="w-full h-full rounded-full">
+                </div>
+                <div>
+                    <h1 class="font-semibold">Dr. Jose Simmons</h1>
+                    <p class="text-gray-600">General Practitioner</p>
+                </div>
+                <div class="w-[1px] h-[32px] bg-gray-300"></div>
+                <div>
+                    <img src="./assets/settings_FILL0_wght300_GRAD0_opsz24.svg" alt="Settings">
+                </div>
+                <div>
+                    <img src="./assets/more_vert_FILL0_wght300_GRAD0_opsz24.svg" alt="More options">
+                </div>
+            </div>
+        </div>
+
+        <!--Content-->
+        <div class="flex gap-6 p-6 w-full">
+            <!-- First div: second largest -->
+            <div class="bg-white rounded-[16px] w-2/6 h-[1054px] top-[122px] left-[18px] py-5 px-4">
+                <div class="flex items-center justify-between mb-8">
+                    <h1 class="font-semibold">Patients</h1>
+                    <img src="./assets/search_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                </div>
+                <!-- Patient card -->
+              <div class="space-y-6 ">
+                <div>
+                    <div class="flex items-center gap-4 justify-between cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[48px] h-[48px]">
+                                <img src="./assets/Layer 8.png" alt="" class="w-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold text-[14px]">Emily Williams</h1>
+                                <p class="text-gray-600 text-sm">Female, 18</p>
+                            </div>
+                        </div>
+                        <img src="./assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-4 justify-between cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[48px] h-[48px]">
+                                <img src="./assets/Layer 1.png" alt="" class="w-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold text-[14px]">Ryan Johnson</h1>
+                                <p class="text-gray-600 text-sm">Male, 45</p>
+                            </div>
+                        </div>
+                        <img src="./assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-4 justify-between cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[48px] h-[48px]">
+                                <img src="./assets/Layer 3.png" alt="" class="w-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold text-[14px]">Brandon Mitchell</h1>
+                                <p class="text-gray-600 text-sm">Male, 36</p>
+                            </div>
+                        </div>
+                        <img src="./assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                    </div>
+                </div>
+                <div class="bg-[#D8FCF7] w-full">
+                    <div class="flex items-center gap-4 justify-between cursor-pointer px-2 py-2">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[48px] h-[48px]">
+                                <img src="./assets/Layer 2.png" alt="" class="w-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold text-[14px]">Jessica Taylor</h1>
+                                <p class="text-gray-600 text-sm">Female, 28</p>
+                            </div>
+                        </div>
+                        <img src="./assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-4 justify-between cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[48px] h-[48px]">
+                                <img src="./assets/Layer 6.png" alt="" class="w-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold text-[14px]">Samantha Johnson</h1>
+                                <p class="text-gray-600 text-sm">Female, 56</p>
+                            </div>
+                        </div>
+                        <img src="./assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-4 justify-between cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[48px] h-[48px]">
+                                <img src="./assets/Layer 12.png" alt="" class="w-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold text-[14px]">Ashley Martinez</h1>
+                                <p class="text-gray-600 text-sm">Female, 54</p>
+                            </div>
+                        </div>
+                        <img src="./assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-4 justify-between cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[48px] h-[48px]">
+                                <img src="./assets/Layer 10.png" alt="" class="w-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold text-[14px]">Olivia Brown</h1>
+                                <p class="text-gray-600 text-sm">Female, 32</p>
+                            </div>
+                        </div>
+                        <img src="./assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-4 justify-between cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[48px] h-[48px]">
+                                <img src="./assets/Layer 3.png" alt="" class="w-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold text-[14px]">Tyler Davis</h1>
+                                <p class="text-gray-600 text-sm">Male, 19</p>
+                            </div>
+                        </div>
+                        <img src="./assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-4 justify-between cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[48px] h-[48px]">
+                                <img src="./assets/Layer 4.png" alt="" class="w-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold text-[14px]">Kevin Anderson</h1>
+                                <p class="text-gray-600 text-sm">Male, 30</p>
+                            </div>
+                        </div>
+                        <img src="./assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-4 justify-between cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[48px] h-[48px]">
+                                <img src="./assets/Layer 5.png" alt="" class="w-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold text-[14px]">Dylan Thompson</h1>
+                                <p class="text-gray-600 text-sm">Male, 36</p>
+                            </div>
+                        </div>
+                        <img src="./assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-4 justify-between cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[48px] h-[48px]">
+                                <img src="./assets/Layer 7.png" alt="" class="w-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold text-[14px]">Nathan Evans</h1>
+                                <p class="text-gray-600 text-sm">Male, 58</p>
+                            </div>
+                        </div>
+                        <img src="./assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-4 justify-between cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[48px] h-[48px]">
+                                <img src="./assets/pexels-photo-1222271.png" alt="" class="w-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold text-[14px]">Mike Nolan</h1>
+                                <p class="text-gray-600 text-sm">Male, 31</p>
+                            </div>
+                        </div>
+                        <img src="./assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                    </div>
+                </div>
+              </div>
+                
+            </div>
+            <!-- Middle div: largest -->
+            <div class="flex gap-6 flex-col w-1/2">
+                <div class="bg-white rounded-[16px] h-[760px] top-[122px] left-[417px] py-6 px-4">
+                    <h1 class="font-semibold mb-6">Diagnosis History</h1>
+                    <div class="">
+                        <!--Graph container-->
+                        <div class="bg-[#f4f0fe] p-4 rounded-[12px]">
+                            <div class="">
+                                <div class="flex items-center justify-between">
+                                    <h1>Blood Pressure</h1>
+                                    <select name="date-period" id="dperiod" class="bg-[#f4f0fe] outline-none cursor-pointer">
+                                        <option value="day">Last 6 months</option>
+                                        <option value="week">Week</option>
+                                        <option value="month">Month</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <div class=" w-full h-[298px] ">
+                                        <canvas id="myChart" class="w-[100%] "></canvas>
+                                    </div>
+                                    <div class="flex items-center gap-4 mt-4">
+                                      <div>
+                                        <p class="font-semibold">Systolic</p>
+                                        <div class="flex items-center gap-2">
+                                          <h1 class="font-semibold">120</h1>
+                                          <p class="text-gray-600 flex items-center gap-2"><img src="./assets/ArrowUp.svg" alt="">Higher than average</p>
+                                        </div>
+                                      </div>
+                                      <div class="w-[1px] h-[32px] bg-gray-300"></div>
+                                      <div>
+                                        <p class="font-semibold">Diastolic</p>
+                                        <div class="flex items-center gap-2">
+                                          <h1 class="font-semibold">78</h1>
+                                          <p class="text-gray-600 flex items-center gap-2"><img src="./assets/ArrowDown.svg" alt="">Lower than average</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col md:flex-row py-2 w-full gap-4 justify-center">
+                            <div class="bg-[#E0F3FA] p-2 rounded flex-1">
+                                <div class="w-[96px]">
+                                    <img src="./assets/respiratory rate.svg" class="w-full" alt="">
+                                </div>
+                                <div class="mb-8">
+                                    <h1 class="text-sm font-medium mt-2">Respiratory Rate</h1>
+                                    <p class="font-semibold text-xl">20 bpm</p>
+                                </div>
+                                <p>Normal</p>
+                            </div>
+                            <div class="bg-[#FFE6E9] p-2 rounded flex-1">
+                                <div class="w-[96px]">
+                                    <img src="./assets/temperature.svg" class="w-full" alt="">
+                                </div>
+                                <div class="mb-8">
+                                    <h1 class="text-sm font-medium mt-2">Temperature</h1>
+                                    <p class="font-semibold text-xl">98.6 F</p>
+                                </div>
+                                <p>Normal</p>
+                            </div>
+                            <div class="bg-[#FFE6F1] p-2 rounded flex-1">
+                                <div class="w-[96px]">
+                                    <img src="./assets/HeartBPM.svg" class="w-full" alt="">
+                                </div>
+                                <div class="mb-8">
+                                    <h1 class="text-sm font-medium mt-2">Heart Rate</h1>
+                                    <p class="font-semibold text-xl">78 bpm</p>
+                                </div>
+                                <p class="text-gray-600 flex items-center gap-2"><img src="./assets/ArrowDown.svg" alt="">Lower than average</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-[16px] h-[298px] top-[827px] left-[417px] p-6 overflow-hidden overflow-y-scroll ">
+                    <h1 class="font-semibold mb-4">Diagnostic List</h1>
+                    <div class="w-full box-border overflow-auto overflow-y-auto">
+                        <table class="min-w-full divide-y divide-gray-200 ">
+                            <thead class="bg-gray-50 rounded-full">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-semibold  tracking-wider">Problem/Diagnosis</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-semibold  tracking-wider">Description</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-semibold tracking-wider">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Hypertension</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">chronic high blood pressure</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Under Observation</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Type 2 Diabetes</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Insulin resistance and elevated blood sugar</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Cured</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Asthma</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Recurrent episodes of bronchial constriction</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Inactive</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                </div>
+                
+            </div>
+            <!-- Last div: smallest -->
+            <div class="flex gap-6 flex-col w-1/3 relative">
+                <div class="bg-white h-[720px] top-[108px] left-[1216px] rounded-[16px] py-4 ">
+                    <div class="w-[150px] h-[150px] flex mx-auto">
+                        <img src="./assets/Layer 2.png" alt="" class="w-full">
+                    </div>
+                    <h1 class="font-semibold mt-2 text-center mb-10">Jessica Taylor</h1>
+                  <div class="px-6 space-y-8 mb-10">
+                    <div class="flex items-center gap-2">
+                        <div class="bg-[#f6f7f8] w-[42px] h-[42px] p-1 flex items-center justify-center rounded-full">
+                            <img src="./assets/calendar_today_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-gray-600 text-sm">Date of Birth</p>
+                            <h2 class="font-semibold">August 23, 1996</h2>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-[#f6f7f8] w-[42px] h-[42px] p-1 flex items-center justify-center rounded-full">
+                            <img src="./assets/FemaleIcon.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-gray-600 text-sm">Gender</p>
+                            <h2 class="font-semibold">Female</h2>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="bg-[#f6f7f8] w-[42px] h-[42px] p-1 flex items-center justify-center rounded-full">
+                            <img src="./assets/PhoneIcon.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-gray-600 text-sm">Contact Info</p>
+                            <h2 class="font-semibold">(415) 555-1234</h2>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="bg-[#f6f7f8] w-[42px] h-[42px] p-1 flex items-center justify-center rounded-full">
+                            <img src="./assets/PhoneIcon.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-gray-600 text-sm">Emergency Contacts</p>
+                            <h2 class="font-semibold">(415) 555-5678</h2>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 ">
+                        <div class="bg-[#f6f7f8] w-[42px] h-[42px] p-1 flex items-center justify-center rounded-full">
+                            <img src="./assets/InsuranceIcon.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-gray-600 text-sm">Insurance Provider</p>
+                            <h2 class="font-semibold">Sunrise Health Assurance</h2>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="px-6">
+                      <button class="bg-[#01F0D0] w-full h-[48px] rounded-full  ">Show All information</button>
+
+                  </div>
+                </div>
+                <div class="bg-white rounded-[16px] h-[304px] top-[855px] left-[1216px]  overflow-hidden overflow-y-scroll">
+                    <div class="p-6">
+                        <h1 class="font-semibold mb-4">Lab Results</h1>
+                        <div class="">
+                            <ul class="space-y-6">
+                                <li class="flex items-center justify-between">Blood Tests <img src="./assets/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></li>
+                                <li class="flex items-center justify-between">CT Scans<img src="./assets/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></li>
+                                <li class="flex items-center justify-between">Radiology Reports<img src="./assets/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></li>
+                                <li class="flex items-center justify-between">X-Rays<img src="./assets/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></li>
+                                <li class="flex items-center justify-between">Urine test<img src="./assets/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></li>
+                                <li class="flex items-center justify-between">Blood Tests <img src="./assets/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Oct 2023', 'Nov 2023', 'Dec 2023', 'Jan 2024', 'Feb 2024', 'Mar 2024'],
+                datasets: [
+                    {
+                        label: 'Systolic',
+                        data: [120, 119, 160, 115, 150, 160],
+                        borderColor: 'rgb(194,110,180)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Diastolic',
+                        data: [110, 62, 110, 90, 70, 79],
+                        borderColor: '#7E6CAB',
+                        tension: 0.1
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        ticks: {
+                            padding: 0 // Adjust this value to increase or decrease the padding between the graph values
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            padding: 0 // Adjust this value to increase or decrease the padding between the graph values
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+    
+</body>
+</html>
